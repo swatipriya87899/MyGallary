@@ -1,0 +1,18 @@
+.gallary_photo_wrapper{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: #000000d9;
+}
+.gallary_photo_container{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+.gallary_photo{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}

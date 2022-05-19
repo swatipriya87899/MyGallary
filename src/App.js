@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import Gallary from './Components/Gallary';
+import Navbar from './Components/Navbar'
 
-function App() {
+const App = () => {
+
+  const [searchInput, setSearchInput] = useState("cat");
+
+  function search_input (input){
+     setSearchInput(input)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Navbar Contains website name, search box and avatar */}
+      <Navbar search_input={search_input}></Navbar>
+
+      {/* Shows the image according to search */}
+      <Gallary searchInput={searchInput}></Gallary>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
