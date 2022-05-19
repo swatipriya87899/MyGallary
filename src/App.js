@@ -6,14 +6,14 @@ const App = () => {
 
   const [searchInput, setSearchInput] = useState("cat");
 
-  function search_input (input){
+  function search_Input (input){
      setSearchInput(input)
   }
 
   return (
     <div>
       {/* Navbar Contains website name, search box and avatar */}
-      <Navbar search_input={search_input}></Navbar>
+      <Navbar search_input={search_Input}></Navbar>
 
       {/* Shows the image according to search */}
       <Gallary searchInput={searchInput}></Gallary>

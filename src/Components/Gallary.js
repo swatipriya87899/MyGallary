@@ -11,7 +11,7 @@ const Gallary = (props) => {
       
      //fetching Images for Gallary
     const url =
-      `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=f1d878cd8954c835bbf20046680dff5a&tags=${props.searchInput}&format=json&nojsoncallback=1`;
+      `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=717e2fbed843decd3d99ca0cc713516f&tags=${props.searchInput}&format=json&nojsoncallback=1`;
 
     const fetchData = async () => {
         const response = await fetch(url);
